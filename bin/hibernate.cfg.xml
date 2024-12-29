@@ -1,0 +1,16 @@
+<!--  Version 8 MySQL hibernate-cfg.xml example for Hibernate 5  -->
+<!-- suppress HibernateConfigDomFacetInspection  -->
+<hibernate-configuration>
+<session-factory>
+<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/hibernate-relations?createDatabaseIfNotExist=true </property>
+<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+<property name="connection.username">root</property>
+<property name="connection.password">93254858</property>
+<property name="show_sql">true</property>
+<property name="format_sql">true</property>
+<!--     When we use create, each time we modify and run our program - content will be deleted -->
+<!--  <property name="hbm2ddl.auto">create</property>  -->
+<property name="hbm2ddl.auto">update</property>
+</session-factory>
+</hibernate-configuration>
